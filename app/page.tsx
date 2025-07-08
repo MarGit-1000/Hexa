@@ -14,6 +14,7 @@ type Script = {
   category: string
   difficulty: "Beginner" | "Intermediate" | "Advanced"
   tags: string[]
+  howto?: string
 }
 
 const scripts: Record<string, Script[]> = {
@@ -21,6 +22,7 @@ const scripts: Record<string, Script[]> = {
     {
       name: "Auto Farm GTPS",
       description: "Automatically farms resources in GTPS with advanced detection and safety features",
+      howto: "/how-to/auto-farm",
       content: `-- Auto Farm GTPS Script v2.0
 -- Advanced farming with safety checks
 local Players = game:GetService("Players")
@@ -338,7 +340,7 @@ export default function HexaScript() {
 
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold text-slate-800">{currentCategory.toUpperCase()} Scripts</h2>
-              <p className="text-slate-600">Professional scripts with advanced features and safety measures</p>
+              <p className="text-slate-600">Scripts made for learning and experimenting, with basic features and some safety.</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -386,7 +388,17 @@ export default function HexaScript() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold text-slate-800">{selectedScript.name}</h1>
-                  <p className="text-slate-600">{selectedScript.description}</p>
+                  <div className="text-slate-600 space-y-1">
+  <p>{selectedScript.description}</p>
+  {selectedScript.howto && (
+    <a
+      href={selectedScript.howto}
+      className="text-blue-600 underline text-sm inline-block hover:text-blue-800"
+    >
+      How to use? Watch
+    </a>
+  )}
+</div>
                   <div className="flex items-center space-x-2">
                     <Badge className={getDifficultyColor(selectedScript.difficulty)}>{selectedScript.difficulty}</Badge>
                     {selectedScript.tags.map((tag, index) => (
