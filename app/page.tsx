@@ -301,7 +301,7 @@ export default function HexaScript() {
 
               <Card
                 className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-purple-200"
-                onClick={() => showScriptList("rgt")}
+                //onClick={() => showScriptList("rgt")}
               >
                 <CardHeader className="text-center pb-4">
                   <div className="mx-auto p-3 bg-purple-100 rounded-full w-fit group-hover:bg-purple-200 transition-colors">
@@ -314,9 +314,7 @@ export default function HexaScript() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex justify-center space-x-2">
-                    <Badge variant="secondary">Speed</Badge>
-                    <Badge variant="secondary">Auto Complete</Badge>
-                    <Badge variant="secondary">Smart</Badge>
+                    <Badge variant="secondary">SOON</Badge>
                   </div>
                 </CardContent>
               </Card>
