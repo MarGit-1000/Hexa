@@ -272,8 +272,7 @@ export default function HexaScript() {
                 </h1>
               </div>
               <p className="text-xl text-slate-600 max-w-2xl">
-                Professional script collection for game automation and enhancement. Choose your category to explore our
-                curated scripts.
+                This script was made by Hexa.
               </p>
             </div>
 
@@ -288,7 +287,7 @@ export default function HexaScript() {
                   </div>
                   <CardTitle className="text-2xl">GTPS Scripts</CardTitle>
                   <CardDescription>
-                    Advanced automation scripts for GTPS with safety features and optimization
+                    Script For GTPS
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -310,7 +309,7 @@ export default function HexaScript() {
                   </div>
                   <CardTitle className="text-2xl">RGT Scripts</CardTitle>
                   <CardDescription>
-                    Professional enhancement scripts for RGT with anti-detection and smart features
+                    SOON
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
